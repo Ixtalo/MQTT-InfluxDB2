@@ -1,0 +1,12 @@
+[Unit]
+Description=Store MQTT messages into InfluxDB v2, a MQTT-InfluxDB-Bridge.
+After=infuxdb.service mosquitto.service
+
+[Service]
+Type=simple
+PIDFile=/run/mqtt-influxdb2.pid
+ExecStart=/opt/mqtt-influxdb2/.venv/bin/python mqtt_influxdb2.py
+WorkingDirectory=/opt/mqtt-influxdb2/
+
+[Install]
+WantedBy=multi-user.target
