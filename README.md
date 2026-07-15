@@ -1,4 +1,12 @@
-# mqtt-influxdb
+# !! DEPRECATED !!
+
+There are other established tools to address this, e.g., Telegraf:
+
+- https://docs.influxdata.com/telegraf/v1/input-plugins/mqtt_consumer/
+- https://github.com/influxdata/telegraf/blob/master/plugins/processors/starlark/
+
+
+# ~~mqtt-influxdb~~ !! DEPRECATED !!
 
 Store MQTT messages into InfluxDB v2, a MQTT-InfluxDB-Bridge.
 
